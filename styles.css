@@ -226,7 +226,7 @@ input[type=checkbox].mytag-check:disabled+.mytag-validate,input[type=radio].myta
 .mytag-spin{animation:mytag-spin 2s infinite linear;-webkit-animation:mytag-spin 2s infinite linear}
 @-webkit-keyframes mytag-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
 @keyframes mytag-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
-.mytag-container{padding:0.02em 16px}
+.mytag-container{padding:0.0em 16px}
 .mytag-panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
 .mytag-example{background-color:#f1f1f1;padding:0.01em 16px}
 .mytag-code,.mytag-codespan{font-family:Consolas,"courier new";font-size:16px}
@@ -359,3 +359,4 @@ input[type=checkbox].mytag-check:disabled+.mytag-validate,input[type=radio].myta
 .mytag-border-dark-grey,.mytag-hover-border-dark-grey:hover,.mytag-border-dark-gray,.mytag-hover-border-dark-gray:hover{border-color:#616161!important}
 .mytag-border-pale-red,.mytag-hover-border-pale-red:hover{border-color:#ffe7e7!important}.mytag-border-pale-green,.mytag-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .mytag-border-pale-yellow,.mytag-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.mytag-border-pale-blue,.mytag-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+.mytag-border-contact{border:1px solid #ccc!important; height:200px}
