@@ -53,25 +53,37 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Catagory Header -->
   <header class="mytag-container mytag-center mytag-padding-24 mytag-black">
-    <div class="mytag-text-white"><h2><b>Contact Us</b></h2></div>
+    <div class="mytag-text-white"><h2><b>Post an Item</b></h2></div>
   </header>
 
   <!-- Grid -->
   <div class="mytag-row mytag-padding mytag-border">
 
-    <div class="mytag-col l8 s10">
+  <div class="mytag-col l8 s10">
 
     <div class="mytag-container mytag-white">
       <div class="mytag-center">
-        <h3>Contact Us</h3>
+        <h3>Post an Item</h3>
       </div>
 
        <div class="mytag-justify">
          <p class="mytag-topnav">
-        Enter your e-mail below and leave us your feedback!!<br></p>
-        <p><input class="mytag-input mytag-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-        <p><input class="mytag-input mytag-border-contact" type="text" placeholder="Give us your feedback" style="width:100%"></p>
-        <br><p class="mytag-right"><button class="mytag-button mytag-white mytag-border"><b>Submit</b></button></p>
+        <h3>Item Name :</h3></p>
+        <p><input class="mytag-input mytag-border" type="text" placeholder="Name of item" style="width:100%"></p><br>
+        <h3>Price: </h3>
+        <p><input class="mytag-input mytag-border" type="text" placeholder="Price of item in euro" style="width:100%"></p><br>
+        <h3>Item Catagory</h3>
+        <p><select>
+          <option value="bags">Bags</option>
+          <option value="glasses">Glasses</option>
+          <option value="coats">Coats</option>
+          <option value="watches">Watches</option>
+          <option value="shoes">Shoes</option>
+        </select></p><br>
+        <h3>Item Description: </h3>
+        <p><textarea rows="5" cols="80" id="DESCRIPTION">
+        </textarea></p>
+        <p class="mytag-right"><button class="mytag-button mytag-white mytag-border"><b>Submit</b></button></p>
       </div>
     </div>
     <hr>
