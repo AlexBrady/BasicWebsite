@@ -389,18 +389,15 @@ input[type=text]:focus {
     }
 
 #searchb input[type="text"], #searchb textarea {
-    background: none repeat scroll 0 0 #F9F9F9;
-    border: 2px none;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 2px 2px;
     float: left;
-    height: 20px;
+    height: 30px;
     padding: 5px 10px;
-    width: 300px;
+    width: 500px;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
-    -webkit-box-shadow: 0 2px 2px #000, 0 3px 10px rgba(0, 0, 0, 0.4) inset;
-    -moz-box-shadow: 0 2px 2px #000, 0 3px 10px rgba(0, 0, 0, 0.4) inset;
-    box-shadow: 0 2px 2px #000, 0 3px 10px rgba(0, 0, 0, 0.4) inset;
     font-family: arial, helvetica, sans-serif;
     font-size: 15px
     }
