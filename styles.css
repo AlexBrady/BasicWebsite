@@ -2,16 +2,8 @@
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
-article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
-audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
-audio:not([controls]){display:none;height:0}[hidden],template{display:none}
-a{background-color:transparent;-webkit-text-decoration-skip:objects}
-a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
-dfn{font-style:italic}mark{background:#ff0;color:#000}
-small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}
+footer,header{display:block}
 img{border-style:none}svg:not(:root){overflow:hidden}
-code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
 hr{box-sizing:content-box;height:0;overflow:visible}
 button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
 button,input{overflow:visible}button,select{text-transform:none}
@@ -20,8 +12,7 @@ button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-fo
 button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
 fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
 legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
-[type=checkbox],[type=radio]{padding:0}
-[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=checkbox],
 [type=search]{-webkit-appearance:textfield;outline-offset:-2px}
 [type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-input-placeholder{color:inherit;opacity:0.54}
@@ -36,7 +27,6 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 img{margin-bottom:-5px}a{color:inherit}
 .mytag-image{max-width:100%;height:50%}
-.mytag-table,.mytag-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
 .mytag-table-all{border:1px solid #ccc}
 .mytag-bordered tr,.mytag-table-all tr{border-bottom:1px solid #ddd}
 .mytag-striped tbody tr:nth-child(even){background-color:#f1f1f1}
@@ -57,19 +47,7 @@ img{margin-bottom:-5px}a{color:inherit}
 .mytag-btn-floating-large.mytag-disabled:hover,.mytag-btn-floating-large:disabled:hover{box-shadow:none}
 .mytag-btn-group .mytag-btn{float:left}.mytag-btn-block{width:100%}
 .mytag-btn-bar .mytag-btn{box-shadow:none;background-color:inherit;color:inherit;float:left}.mytag-btn-bar .mytag-btn:hover{background-color:#ccc}
-.mytag-badge,.mytag-tag,.mytag-sign{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
-.mytag-badge{border-radius:50%}
-ul.mytag-ul{list-style-type:none;padding:0;margin:0}ul.mytag-ul li{padding:8px 16px;border-bottom:1px solid #ddd}ul.mytag-ul li:last-child{border-bottom:none}
 .mytag-tooltip,.mytag-display-container{position:relative}.mytag-tooltip .mytag-text{display:none}.mytag-tooltip:hover .mytag-text{display:inline-block}
-.mytag-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
-.mytag-navbar li{float:left}.mytag-navbar li a,.mytag-navitem,.mytag-navbar li .mytag-btn,.mytag-navbar li .mytag-input{display:block;padding:8px 16px}.mytag-navbar li .mytag-btn,.mytag-navbar li .mytag-input{border:none;outline:none;width:100%}
-.mytag-navbar li a:hover{color:#000;background-color:#ccc}
-.mytag-navbar .mytag-dropdown-hover,.mytag-navbar .mytag-dropdown-click{position:static}
-.mytag-navbar .mytag-dropdown-hover:hover,.mytag-navbar .mytag-dropdown-hover:first-child,.mytag-navbar .mytag-dropdown-click:hover{background-color:#ccc;color:#000}
-.mytag-navbar a,.mytag-topnav a,.mytag-sidenav a,.mytag-dropdown-content a,.mytag-accordion-content a,.mytag-dropnav a,.mytag-navblock a{text-decoration:none!important}
-.mytag-navbar .mytag-opennav.mytag-right{float:right!important}.mytag-topnav{padding:8px 8px}
-.mytag-navblock .mytag-dropdown-hover:hover,.mytag-navblock .mytag-dropdown-hover:first-child,.mytag-navblock .mytag-dropdown-click:hover{background-color:#ccc;color:#000}
-.mytag-navblock .mytag-dropdown-hover,.mytag-navblock .mytag-dropdown-click{width:100%}.mytag-navblock .mytag-dropdown-hover .mytag-dropdown-content,.mytag-navblock .mytag-dropdown-click .mytag-dropdown-content{min-width:100%}
 .mytag-topnav a{padding:0 8px;border-bottom:3px solid transparent;-webkit-transition:border-bottom .25s;transition:border-bottom .25s}
 .mytag-topnav a:hover{border-bottom:3px solid #fff}.mytag-topnav .mytag-dropdown-hover a{border-bottom:0}
 .mytag-opennav,.mytag-closenav{color:inherit}.mytag-opennav:hover,.mytag-closenav:hover{cursor:pointer;opacity:0.8}
@@ -170,10 +148,6 @@ input[type=checkbox].mytag-check:disabled+.mytag-validate,input[type=radio].myta
 .mytag-topnav .mytag-dropdown-hover .mytag-dropdown-content,.mytag-navbar .mytag-dropdown-click .mytag-dropdown-content,.mytag-navbar .mytag-dropdown-hover .mytag-dropdown-content,.mytag-dropdown-hover.mytag-mobile .mytag-dropdown-content,.mytag-dropdown-click.mytag-mobile .mytag-dropdown-content{position:relative}
 .mytag-topnav,.mytag-navbar{text-align:center}.mytag-hide-small{display:none!important}.mytag-layout-col,.mytag-mobile{display:block;width:100%!important}.mytag-bar-item.mytag-mobile,.mytag-dropdown-hover.mytag-mobile,.mytag-dropdown-click.mytag-mobile{text-align:center}
 .mytag-dropdown-hover.mytag-mobile,.mytag-dropdown-hover.mytag-mobile .mytag-btn,.mytag-dropdown-hover.mytag-mobile .mytag-button,.mytag-dropdown-click.mytag-mobile,.mytag-dropdown-click.mytag-mobile .mytag-btn,.mytag-dropdown-click.mytag-mobile .mytag-button{width:100%}}
-@media (max-width:768px){.mytag-modal-content{width:500px}.mytag-modal{padding-top:50px}}
-@media (min-width:993px){.mytag-modal-content{width:900px}.mytag-hide-large{display:none!important}.mytag-sidenav.mytag-collapse,.mytag-sidebar.mytag-collapse{display:block!important}}
-@media (max-width:992px) and (min-width:601px){.mytag-hide-medium{display:none!important}}
-@media (max-width:992px){.mytag-sidenav.mytag-collapse,.mytag-sidebar.mytag-collapse{display:none}.mytag-main{margin-left:0!important;margin-right:0!important}}
 .mytag-top,.mytag-bottom{position:fixed;width:100%;z-index:1}.mytag-top{top:0}.mytag-bottom{bottom:0}
 .mytag-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
 .mytag-left{float:left!important}.mytag-right{float:right!important}
@@ -193,10 +167,6 @@ input[type=checkbox].mytag-check:disabled+.mytag-validate,input[type=radio].myta
 .mytag-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .mytag-display-container:hover .mytag-display-hover{display:block}.mytag-display-container:hover span.mytag-display-hover{display:inline-block}.mytag-display-hover{display:none}
 .mytag-display-position{position:absolute}
-.mytag-circle{border-radius:50%!important}
-.mytag-round-small{border-radius:2px!important}.mytag-round,.mytag-round-medium{border-radius:4px!important}
-.mytag-round-large{border-radius:8px!important}.mytag-round-xlarge{border-radius:16px!important}
-.mytag-round-xxlarge{border-radius:32px!important}.mytag-round-jumbo{border-radius:64px!important}
 .mytag-border-0{border:0!important}.mytag-border{border:1px solid #ccc!important}
 .mytag-border-top{border-top:1px solid #ccc!important}.mytag-border-bottom{border-bottom:1px solid #ccc!important}
 .mytag-border-left{border-left:1px solid #ccc!important}.mytag-border-right{border-right:1px solid #ccc!important}
@@ -227,53 +197,7 @@ input[type=checkbox].mytag-check:disabled+.mytag-validate,input[type=radio].myta
 @-webkit-keyframes mytag-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
 @keyframes mytag-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
 .mytag-container{padding:0.0em 16px}
-.mytag-panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
-.mytag-example{background-color:#f1f1f1;padding:0.01em 16px}
-.mytag-code,.mytag-codespan{font-family:Consolas,"courier new";font-size:16px}
-.mytag-code{line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
-.mytag-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
-.mytag-example,.mytag-code{margin:20px 0}.mytag-card{border:1px solid #ccc}
-.mytag-card-2,.mytag-example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
-.mytag-card-4,.mytag-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
-.mytag-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
-.mytag-card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important}
-.mytag-card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important}
-.mytag-card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important}
-.mytag-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
-@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.mytag-animate-opacity{-webkit-animation:opac 0.8s;animation:opac 0.8s}
-@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
-@keyframes opac{from{opacity:0} to{opacity:1}}
-.mytag-animate-top{position:relative;-webkit-animation:animatetop 0.4s;animation:animatetop 0.4s}
-@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.mytag-animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
-@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-.mytag-animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
-@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-.mytag-animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
-@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
-@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-.mytag-animate-zoom {-webkit-animation:animatezoom 0.6s;animation:animatezoom 0.6s}
-@-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
-@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-.mytag-animate-input{-webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out}.mytag-animate-input:focus{width:100%!important}
-.mytag-opacity,.mytag-hover-opacity:hover{opacity:0.60;-webkit-backface-visibility:hidden}
-.mytag-opacity-off,.mytag-hover-opacity-off:hover{opacity:1;-webkit-backface-visibility:hidden}
-.mytag-opacity-max{opacity:0.25;-webkit-backface-visibility:hidden}
-.mytag-opacity-min{opacity:0.75;-webkit-backface-visibility:hidden}
-.mytag-greyscale-max,.mytag-grayscale-max,.mytag-hover-greyscale:hover,.mytag-hover-grayscale:hover{-webkit-filter:grayscale(100%);filter:grayscale(100%)}
-.mytag-greyscale,.mytag-grayscale{-webkit-filter:grayscale(75%);filter:grayscale(75%)}
-.mytag-greyscale-min,.mytag-grayscale-min{-webkit-filter:grayscale(50%);filter:grayscale(50%)}
-.mytag-sepia{-webkit-filter:sepia(75%);filter:sepia(75%)}
-.mytag-sepia-max,.mytag-hover-sepia:hover{-webkit-filter:sepia(100%);filter:sepia(100%)}
-.mytag-sepia-min{-webkit-filter:sepia(50%);filter:sepia(50%)}
-.mytag-text-shadow{text-shadow:1px 1px 0 #444}.mytag-text-shadow-white{text-shadow:1px 1px 0 #ddd}
-.mytag-transparent{background-color:transparent!important}
-.mytag-hover-none:hover{box-shadow:none!important;background-color:transparent!important}
+
 /* Colors */
 .mytag-amber,.mytag-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .mytag-aqua,.mytag-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
